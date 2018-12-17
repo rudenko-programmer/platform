@@ -20,7 +20,7 @@ class WidgetController
     public function index(WidgetContractInterface $widget, $key = null)
     {
         $widget->query = request('term');
-        $widget->key   = $key;
+        $widget->key = $key;
 
         $results = [];
 
@@ -40,7 +40,7 @@ class WidgetController
             }
         }
 
-        if (!is_null($key)) {
+        if (! is_null($key)) {
             return response()->json($widget->handler());
         }
 

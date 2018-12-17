@@ -65,7 +65,7 @@ class RelationshipField extends Field
         'required',
         'size',
         'tabindex',
-        'placeholder'
+        'placeholder',
     ];
 
     /**
