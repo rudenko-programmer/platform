@@ -21,6 +21,7 @@ use Orchid\Screen\Field;
  * @method $this help($value = true)
  * @method $this popover($value = true)
  * @method $this handler($value = true)
+ * @method $this placeholder($string)
  */
 class RelationshipField extends Field
 {
@@ -64,6 +65,7 @@ class RelationshipField extends Field
         'required',
         'size',
         'tabindex',
+        'placeholder'
     ];
 
     /**

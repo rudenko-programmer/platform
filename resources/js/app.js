@@ -1,9 +1,6 @@
 import { Application, Controller } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 
-// remove
-$.fn.select2.defaults.set('theme', 'bootstrap');
-
 const jq = require('jquery');
 
 global.$ = jq;

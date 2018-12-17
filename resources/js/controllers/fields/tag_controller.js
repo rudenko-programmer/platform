@@ -1,9 +1,12 @@
 import { Controller } from 'stimulus';
+import Choices from 'choices.js'
+
 
 export default class extends Controller {
     connect() {
         const select = this.element.querySelector('select');
 
+        /*
         setTimeout(() => {
             $(select).select2({
                 templateResult: (state) => {
@@ -37,5 +40,6 @@ export default class extends Controller {
                 },
             });
         }, 100);
+        */
     }
 }

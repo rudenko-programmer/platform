@@ -20,9 +20,27 @@ class WidgetController
     public function index(WidgetContractInterface $widget, $key = null)
     {
         $widget->query = request('term');
-        $widget->key = $key;
+        $widget->key   = $key;
 
-        if (! is_null($key)) {
+        $results = [];
+
+        foreach ($widget->handler() as $key => $values) {
+            $values = array_values($values);
+
+            if (isset($values[1])) {
+                array_push($results, [
+                    'id'   => $values[0],
+                    'text' => $values[1],
+                ]);
+            } else {
+                array_push($results, [
+                    'id'   => $values[0],
+                    'text' => $values[0],
+                ]);
+            }
+        }
+
+        if (!is_null($key)) {
             return response()->json($widget->handler());
         }
 

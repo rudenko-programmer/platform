@@ -4,8 +4,6 @@
 
 // Vendor
 @import "~bootstrap/scss/bootstrap";
-@import "~select2/dist/css/select2.min";
-@import "~select2-bootstrap-theme/src/select2-bootstrap";
 @import "~dropzone/dist/min/basic.min";
 @import "~dropzone/dist/min/dropzone.min";
 @import "~cropperjs/dist/cropper";
@@ -14,6 +12,7 @@
 @import "~orchid-icons/src/scss/orchid-icons";
 @import "~leaflet/dist/leaflet";
 @import "~quill/dist/quill.snow";
+@import "~choices.js/assets/styles/scss/choices";
 
 // App
 @import "core/mixins";
