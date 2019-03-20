@@ -13,7 +13,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Orchid\Platform\Traits\Attachment;
+use Orchid\Platform\Traits\AttachTrait;
 
 class Hostel extends Model
 {
